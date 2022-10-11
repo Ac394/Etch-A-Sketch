@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<script src="script.js" defer></script>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Etch-a-Sketch</title>
+  <link href="style.css" rel="stylesheet" type="text/css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+</head>
+
+<header>Etch-a-sketch</header>
+  
+<body class='unselectable'>
+  <div class='main'>
+    <div class='radioContainer'>
+      <input id = 'colorpicker' type="color" name="color" value="#37a131">
+      
+      <input type="radio" name="buttonGroup" checked="checked" value="colormode" id="colormode"><label for="colormode">Color Mode</label>
+
+      <input type="radio" name="buttonGroup" value="rainbow" id="rainbow"><label for="rainbow">Rainbow</label>
+      
+      <input type="radio" name="buttonGroup" value="erase" id="erase"><label for="erase">Erase</label>
+    
+      <input type="radio" name="buttonGroup" value="lighten" id="lighten"><label for="lighten">Lighten</label>
+    
+      <input type="radio" name="buttonGroup" value="darken" id="darken"><label for="darken">Darken</label>
+    
+      <button class='clear' id='clear'>Clear</button>
+    </div>
+    
+    <div class='board'>
+        <div class='container' id='container'>
+          <div class='gridCell'></div>
+          <div class='gridCell'></div>
+          <div class='gridCell'></div>
+          <div class='gridCell'></div>
+          <div class='gridCell'></div> 
+          <div class='gridCell'></div> 
+          <div class='gridCell'></div> 
+          <div class='gridCell'></div> 
+          <div class='gridCell'></div> 
+        </div>
+    </div>    
+</div>
+    
+  <div class="slidecontainer">
+    <input type="range" min="1" max="100" value="3" class="slider" id="slider">
+    <p class= 'size' id='sizeOutput'>3x3</p>
+  </div>  
+</div>
+  
+</body>
+
+</html>
